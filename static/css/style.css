@@ -143,13 +143,14 @@ body {
     width: 100%;
     height: 100%;
     background-color: #0D1025;
-    z-index: 1;
     filter: blur(75px);
     opacity: .06;
     width: 1068.84px;
     height: 189.22px;
     border-radius: 10px;
     bottom: -11.22px;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: -1;
 }
 
@@ -251,6 +252,7 @@ body {
 .Plan {
     background: linear-gradient(180deg, #F8F8F8 -45.04%, rgba(248, 248, 248, 0) 88.56%);
     margin-bottom: 150px;
+    padding-top: 80px;
 }
 
 .plan-text {
@@ -347,7 +349,7 @@ body {
     border-color: #F53838;
 }
 
-.plan-card-second .plan-card-list{
+.plan-card-second .plan-card-list {
     margin-bottom: 90px;
 }
 
@@ -384,6 +386,10 @@ body {
 
 /* Network style start */
 
+.Network {
+    margin-bottom: 58px;
+}
+
 .wrapper-network {
     text-align: center;
 }
@@ -410,6 +416,204 @@ body {
 }
 
 /* Network style end */
+
+
+
+/* Feedback style start */
+
+.Feedback {
+    /* padding-bottom: 202px; */
+    position: relative;
+}
+
+.wrapper-feedback {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.feedback-text {
+    text-align: center;
+}
+
+.feedback-title {
+    max-width: 448px;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 50px;
+    color: #0B132A;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.feedback-subtitle {
+    max-width: 555px;
+    line-height: 30px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.feedback-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    margin-bottom: 60px;
+}
+
+
+.feedback-card {
+    max-width: 400px;
+    padding: 30px 30px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: #DDDDDD;
+}
+
+.feedback-first-card {
+    border-color: #F53838;
+}
+
+
+.feedback-card-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.feedback-card-info-author {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.feedback-card-img-author-container {
+    margin-right: 20px;
+}
+
+.feedback-card-author-name {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.feedback-card-author-country {
+    font-size: 14px;
+}
+
+.feedback-card-rating {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.feedback-card-rating-img {
+    margin-left: 12px;
+}
+
+.feedback-card-body {
+    line-height: 30px;
+}
+
+.feedback-active-img-choice-container {
+    text-align: center;
+    margin-bottom: 250px;
+}
+
+
+/* Feedback style end */
+
+
+
+
+/* Subscribe style start */
+
+.cta {
+
+    margin-top: -116.5px;
+    margin-bottom: -116.5px;
+    position: relative;
+    z-index: 2;
+}
+
+.wrapper-cta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 58.5px 70px;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+.wrapper-cta::after {
+    content: "";
+    position: absolute;
+    width: 1077.17px;
+    height: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 17px;
+
+    background: #0D1025;
+    opacity: 0.6;
+    filter: blur(57px);
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.cta-title {
+    max-width: 372px;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 45px;
+    color: #0B132A;
+    margin-bottom: 20px;
+}
+
+.cta-subtitle {
+    line-height: 30px;
+}
+
+.cta-button-container {
+    display: flex;
+    align-items: center;
+}
+
+.cta-button {
+    font-weight: 700;
+    line-height: 25px;
+    color: white;
+    padding: 17.5px 65px;
+    border-radius: 10px;
+    background-color: #F53838;
+    position: relative;
+}
+
+.cta::after {
+    content: "";
+    position: absolute;
+    width: 211.83px;
+    height: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 26px;
+
+    background: rgba(245, 56, 56, 0.35);
+    filter: blur(27px);
+    border-radius: 10px;
+    z-index: -1;
+
+}
+
+/* Subscribe style end */
+
+
+.footer {
+    background-color: #DDDDDD;
+    padding-top: 180px;
+}
+
 
 /* Fonts start */
 
