@@ -526,7 +526,7 @@ body {
 
 
 
-/* Subscribe style start */
+/* Cta style start */
 
 .cta {
 
@@ -556,10 +556,10 @@ body {
     top: 17px;
 
     background: #0D1025;
-    opacity: 0.6;
+    opacity: 0.06;
     filter: blur(57px);
     border-radius: 10px;
-    z-index: -1;
+    z-index: -2;
 }
 
 .cta-title {
@@ -576,8 +576,10 @@ body {
 }
 
 .cta-button-container {
+    position: relative;
     display: flex;
     align-items: center;
+    
 }
 
 .cta-button {
@@ -588,9 +590,12 @@ body {
     border-radius: 10px;
     background-color: #F53838;
     position: relative;
+    z-index: 2;
+    
 }
 
-.cta::after {
+
+.cta-button::after {
     content: "";
     position: absolute;
     width: 211.83px;
@@ -606,13 +611,91 @@ body {
 
 }
 
-/* Subscribe style end */
+/* Cta style end */
+
+
+
+
+/* Footer style start */
 
 
 .footer {
-    background-color: #DDDDDD;
+    background-color: #F8F8F8;
     padding-top: 180px;
+    padding-bottom: 100px;
 }
+
+.wrapper-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-leftPanel-logo {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.footer-leftPanel-logo-img {
+    margin-right: 10px;
+}
+
+.footer-leftPanel-link-container {
+    display: flex;
+    align-items: center;
+}
+
+.footer-leftPanel-logo-link {
+    font-size: 20px;
+    font-weight: 500;
+    color: #0B132A;
+
+}
+
+.footer-leftPanel-subtitle {
+    max-width: 340px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-leaftPanel-rule {
+    line-height: 30px;
+    color: #AFB5C0;
+}
+
+.footer-panelRight {
+    display: flex;
+}
+
+.footer-list {
+    margin-left: 126px;
+}
+
+.footer-list:first-child {
+    margin-left: 0;
+}
+
+.footer-list-product-item:first-child {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    color:#0B132A;
+    margin-bottom: 20px;
+}
+
+.footer-list-product-item-link {
+    line-height: 30px;
+    margin-bottom: 10px;
+    color:#4F5665;
+}
+
+.footer-list-product-item-link:last-child {
+    margin-bottom: 0;
+}
+
+/* Footer style end */
+
+
 
 
 /* Fonts start */
