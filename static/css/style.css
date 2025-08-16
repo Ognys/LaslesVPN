@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Rubik';
     font-size: 16px;
@@ -14,6 +18,13 @@ body {
 .header {
     position: fixed;
     width: 100%;
+    transition: .2s linear;
+    z-index: 100;
+}
+
+.header_active {
+    background-color: #DDDDDD;
+    padding-bottom: 15px;
 }
 
 .header-wrapper {
@@ -53,6 +64,13 @@ body {
 .header-nav-item-link {
     color: #4F5665;
     font-size: 16px;
+    transition: .2s;
+}
+
+.header-nav-item-link:hover,
+.header-nav-item-link:active,
+.header-nav-item-link:focus {
+    opacity: .75;
 }
 
 .header-auth {
@@ -64,6 +82,13 @@ body {
     font-weight: 500;
     color: #0B132A;
     margin-right: 30px;
+    transition: .2s;
+}
+
+.header-auth-signIn:hover,
+.header-auth-signIn:active,
+.header-auth-signIn:focus {
+    opacity: .75;
 }
 
 .header-auth-signUp {
@@ -74,6 +99,14 @@ body {
     border-radius: 50px;
     border-color: #F53855;
     border-width: 1px;
+    transition: .2s;
+}
+
+.header-auth-signUp:hover,
+.header-auth-signUp:active,
+.header-auth-signUp:focus {
+    background-color: #F53855;
+    color: white;
 }
 
 /* Header style end */
@@ -114,6 +147,13 @@ body {
     background-color: #F53838;
     border-radius: 10px;
     box-shadow: 0 9px 16px #F53838;
+    transition: .2s;
+}
+
+.intro-button:hover,
+.intro-button:active,
+.intro-button:focus {
+    scale: 1.1;
 }
 
 .intro-img-contaner {
@@ -130,6 +170,7 @@ body {
 
 .Data {
     margin-bottom: 95px;
+    scroll-margin-top: 350px;
 }
 
 .wrapper-data {
@@ -195,6 +236,7 @@ body {
 
 .Features {
     margin-bottom: 132px;
+    scroll-margin-top: 170px;
 }
 
 .features-wrapper {
@@ -276,6 +318,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
+    
 }
 
 .plan-card {
@@ -347,6 +390,14 @@ body {
     border-radius: 50px;
     border-width: 2px;
     border-color: #F53838;
+    transition: .2s;
+}
+
+.plan-card-button:hover,
+.plan-card-button:focus
+.plan-card-button:active {
+    background-color: #F53838;
+    color: white;
 }
 
 .plan-card-second .plan-card-list {
@@ -361,6 +412,13 @@ body {
     color: white;
     background-color: #F53838;
     position: relative;
+}
+
+.plan-card-third .plan-card-button:hover,
+.plan-card-third .plan-card-button:focus,
+.plan-card-third .plan-card-button:active {
+    color: #F53838;
+    background-color: white;
 }
 
 .plan-card-third .plan-card-button::after {
@@ -424,6 +482,7 @@ body {
 .Feedback {
     /* padding-bottom: 202px; */
     position: relative;
+    scroll-margin-top: 109px;
 }
 
 .wrapper-feedback {
@@ -579,7 +638,7 @@ body {
     position: relative;
     display: flex;
     align-items: center;
-    
+
 }
 
 .cta-button {
@@ -591,7 +650,14 @@ body {
     background-color: #F53838;
     position: relative;
     z-index: 2;
-    
+    transition: .2s;
+
+}
+
+.cta-button:hover,
+.cta-button:active,
+.cta-button:focus {
+    scale: 1.1;
 }
 
 
@@ -679,14 +745,21 @@ body {
     font-size: 18px;
     font-weight: 500;
     line-height: 30px;
-    color:#0B132A;
+    color: #0B132A;
     margin-bottom: 20px;
 }
 
 .footer-list-product-item-link {
     line-height: 30px;
     margin-bottom: 10px;
-    color:#4F5665;
+    color: #4F5665;
+    transition: .2s;
+}
+
+.footer-list-product-item-link:hover,
+.footer-list-product-item-link:focus,
+.footer-list-product-item-link :active {
+    color: #161a24;
 }
 
 .footer-list-product-item-link:last-child {
